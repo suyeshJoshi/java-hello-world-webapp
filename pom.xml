@@ -16,6 +16,15 @@
     </dependency>
   </dependencies>
   <build>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.8.7</version>
+            </plugin>
+        </plugins>
+    </pluginManagement>
     <finalName>java-hello-world</finalName>
   </build>
 </project>
