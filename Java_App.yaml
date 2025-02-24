@@ -1,0 +1,18 @@
+name: "Java_App_build_$(Rev:r)"
+
+variables:
+pool-name: "Azure-Ubuntu"
+
+pool: $(pool)
+
+stages:
+  - stage: "BuildApp"
+    displayName: "Build Java App"
+    jobs:
+      - job: "Scans"
+        displayName: "Running Code Scans"
+        steps:
+          - script: echo "Running Scans\n.\n.\n.\n.\n."
+          - script: echo "Scans completed successfully"
+
+
